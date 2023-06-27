@@ -9,6 +9,11 @@ export default {
 	onShow() {
 		this.setBadge();
 	},
+	watch:{
+		total(){
+			this.setBadge();
+		}
+	},
 	methods:{
 		setBadge(){
 			uni.setTabBarBadge({
